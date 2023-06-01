@@ -161,7 +161,7 @@ class HARModel(nn.Module):
         return x
 
     
-net_st2 = HARModel(n_sensor_channels=X_train.shape[2], len_seq=X_train.shape[1], n_classes=12)
+net_st1 = HARModel(n_sensor_channels=X_train.shape[2], len_seq=X_train.shape[1], n_classes=12)
 
 def train(net, epochs=10, batch_size=64, lr=0.01):
     # opt = torch.optim.Adam(net.parameters(), lr=lr)
@@ -279,4 +279,4 @@ if(train_on_gpu):
 else: 
     print('No GPU available, training on CPU; consider making n_epochs very small.')
 
-train(net_st2)
+train(net_st1)
