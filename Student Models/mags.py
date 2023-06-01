@@ -201,7 +201,7 @@ def train(net, epochs=10, batch_size=64, lr=0.01):
             # get the output from the model
             output = net(inputs)
             # loss = criterion(output, torch.from_numpy(to_categorical(y, num_classes=NUM_CLASSES)).to(device))
-            loss = DistillationLoss(output, torch.argmax(targets,dim=1),net2(inputs))
+            loss = DistillationLoss(output, torch.argmax(targets,dim=1),net3(inputs))
             # print(output.shape)
             # print(targets.shape)
             # loss = criterion(output, targets)
@@ -239,7 +239,7 @@ def train(net, epochs=10, batch_size=64, lr=0.01):
                 output = net(inputs)
 
                 # val_loss = criterion(output, torch.from_numpy(to_categorical(y, num_classes=NUM_CLASSES)).to(device))
-                val_loss = DistillationLoss(output, torch.argmax(targets,dim=1),net2(inputs))
+                val_loss = DistillationLoss(output, torch.argmax(targets,dim=1),net3(inputs))
                 # val_loss = criterion(output, targets)
                 val_losses.append(val_loss.item())
                 
