@@ -1,5 +1,8 @@
+import Helper
+from accs import net_st1
+from gyrs import net_st2
+from mags import net_st3
 
-from Student Model import *
 
 
 class Ensemble(nn.Module):
