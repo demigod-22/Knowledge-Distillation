@@ -23,7 +23,7 @@ from sklearn.preprocessing import StandardScaler, MinMaxScaler
 import sklearn.metrics as metrics
 from sklearn.model_selection import train_test_split
 from Distillation_loss import *
-
+from acct import net1
 gpu_id=3
 if gpu_id>=0:
     os.environ["CUDA_VISIBLE_DEVICES"] = str(gpu_id)
