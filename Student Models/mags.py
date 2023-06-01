@@ -23,6 +23,7 @@ from sklearn.preprocessing import StandardScaler, MinMaxScaler
 import sklearn.metrics as metrics
 from sklearn.model_selection import train_test_split
 from Distillation_loss import *
+from magt import net3
 
 gpu_id=3
 if gpu_id>=0:
