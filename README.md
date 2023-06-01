@@ -4,11 +4,11 @@ Implementation of knowledge distillation
 With Multiple teachers : 
   1) Each teacher model trained by a different sensor.
   
-       a) acct.py
+        a) acct.py
       
-       b) gyrt.py
+        b) gyrt.py
        
-       c) magt.py
+        c) magt.py
        
        the above three files are present in the Student Models
        
