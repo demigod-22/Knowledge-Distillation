@@ -135,7 +135,7 @@ class HARModel(nn.Module):
         x = F.relu(self.conv1(x))
         x = F.relu(self.conv2(x))
         x = F.relu(self.conv3(x))
-    
+        # one layer was removed.
         x = torch.permute(x, (3,0,1,2))
         x = x.view(x.shape[0], x.shape[1],-1)
         
